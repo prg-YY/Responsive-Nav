@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Nav</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container-icon">
+        <a href="#"><img class="primary-icon" src="/images/king.svg" /></a>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li class="list-item"><a href="">Our Service</a></li>
+        <li class="list-item"><a href="">About Us</a></li>
+        <li class="list-item"><a href="">Contact</a></li>
+        <li class="list-item"><a href="">Support</a></li>
+      </ul>
+      <div class="menu" id="hamburger-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    const hamburgerButton = document.getElementById("hamburger-button")
+    const navList = document.getElementById("nav-list")
+    hamburgerButton.addEventListener("click", () => {
+      navList.classList.toggle("nan")
+    })
+  </script>
+</html>
